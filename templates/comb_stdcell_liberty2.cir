@@ -1,0 +1,69 @@
+TestBench Cir File for a Liberty characterization of a Combinational StdCells Library
+
+* Technology Dependent design rules/parameters
+.include /CMC/setups/ensc450/HSPICE/cmosp18/rules.inc
+* Custom User Library
+.option search = "/CMC/setups/ensc450/HSPICE/libraries"
+
+* Transistor models 
+.protect
+.LIB `/CMC/setups/ensc450/HSPICE/cmosp18/log018.l' TT  $ typical process corner.
+.unprotect
+
+* Supply Sources
+.param pwr=1.2V 
+.temp  25
+Vvdd  vdd   0 dc pwr
+Vvdds vdds  0 dc pwr
+Vgnd  gnd   0 dc 0
+Vgnds gnds  0 dc 0
+
+* Characterization Parameters
+.param Cload=2fF
+
+* Logic ***********************************************************************
+* Note: All Cells are defined as macro, and their performance is measured here
+
+Cz   z  0   Cload
+
+
+* Input Stimuli (Step response)
+VA  a  0 PWL(0n pwr '20n-Ttran' pwr 20n 0)
+
+
+* Simulation Parameters ************************
+.tran 0.01ps 40ns START=0 SWEEP Ttran POI 2 200p 1n 
+
+* Measurements ***************************************
+.meas tran tpd trig v(a)    val='pwr*0.5' cross=1
++              targ v(z)    val='pwr*0.5' rise=1 
+
+.meas tran ttr trig v(z)    val='pwr*0.2' rise=1
++              targ v(z)    val='pwr*0.8' rise=1 
+
+******************************************************
+
+.option post
+
+.alter INV 2
+Xcell  a        z    vdd vdds gnd gnds iv   ds=2
+.param Cload=2fF
+
+.alter INV 10
+.param Cload=10fF
+
+.alter NAND 2
+Xcell  a   vdd   z   vdd vdds gnd gnds nd   ds=2
+.param Cload=2fF
+
+.alter NAND 10
+.param Cload=10fF
+
+.alter NOR 2
+Xcell  a   gnd   z   vdd vdds gnd gnds  nr   ds=2
+.param Cload=2fF
+
+.alter NOR 10
+.param Cload=10fF
+
+.end

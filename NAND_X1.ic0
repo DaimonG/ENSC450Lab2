@@ -1,0 +1,20 @@
+* "simulator" "HSPICE" 
+* "version" "D-2010.03-SP2 32-BIT"
+* "format" "HSP"
+* "rundate" "19:30:50 02/10/2021 "
+* "netlist" "NAND_X1.cir "
+* "runtitle" "inverter: basic example"
+* time =    0.            
+* temperature =  125.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ a =   0.            
++ b =   0.            
++ c =  25.0958m       
++ gnds =   0.            
++ vdd =   1.0500        
++ vdds =   1.0500        
++ z =   1.0500        
+***   END: Saved Operating Point ***                     
