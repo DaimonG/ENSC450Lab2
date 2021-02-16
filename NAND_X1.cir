@@ -28,14 +28,14 @@ Xnmosb gnd b c gnds nt_st w=Wn
 Cload z 0 load
 
 * Input Stimuli (Step response)
-VA  a  0 PWL(0n pwr 5ns pwr 6ns pwr 11ns pwr 12ns pwr 17ns pwr 19ns pwr 23ns pwr)
-VB  b  0 PWL(0n 0 5ns 0 6ns pwr 11ns pwr 12ns 0 17ns 0 19ns pwr 23ns pwr)
+VA  a  0 PWL(0n pwr 5ns pwr 6ns pwr 11ns pwr 12ns pwr 17ns pwr 19ns pwr 23ns pwr 25ns pwr)
+VB  b  0 PWL(0n 0 5ns 0 6ns pwr 11ns pwr 12ns 0 17ns 0 19ns pwr 23ns pwr 25ns 0)
 
 * Simulation Parameters ************************
 .tran 0.01ps 40ns START=0
 * Sweeps transistor width 
 * .tran 0.01ps 40ns START=0 sweep Wn START=Wn STOP=4*Wn STEP=Wn
-.tran 0.01ps 20ns START=0 sweep load POI 2 2fF 10fF 
+.tran 0.01ps 30ns START=0 sweep load POI 2 2fF 10fF 
 
 .graph V(a)
 .graph V(b)
@@ -47,6 +47,24 @@ VB  b  0 PWL(0n 0 5ns 0 6ns pwr 11ns pwr 12ns 0 17ns 0 19ns pwr 23ns pwr)
 +                        targ v(z) val='pwr*0.5' cross=1 
 .meas tran pdf_2ns       trig v(b) val='pwr*0.5' cross=3
 +                        targ v(z) val='pwr*0.5' cross=3
+
+* Rise propogation delay
+.meas tran tpdr_1ns      trig v(b) val='pwr*0.5' cross=2
++                        targ v(z) val='pwr*0.5' cross=2 
+.meas tran tpdr_2ns      trig v(b) val='pwr*0.5' cross=4
++			 targ v(z) val='pwr*0.5' cross=4
+
+* Rise Time
+.meas tran ttr_1ns       trig v(z) val='pwr*0.2' rise=1
++                        targ v(z) val='pwr*0.8' rise=1
+.meas tran ttr_2ns       trig v(z) val='pwr*0.2' rise=2
++                        targ v(z) val='pwr*0.8' rise=2
+
+* Fall Time
+.meas tran ttf_1ns       trig v(z) val='pwr*0.8' fall=1
++                        targ v(z) val='pwr*0.2' fall=1
+.meas tran ttf_2ns       trig v(z) val='pwr*0.8' fall=2
++                        targ v(z) val='pwr*0.2' fall=2
 
 * Measures Power (cell leakage and dynamic)
 .meas tran leak_pow_pwr  avg power FROM=1ns TO=3ns
