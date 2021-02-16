@@ -19,21 +19,20 @@ Vgnds gnds 0 dc 0
 
 * Logic 
 .param Wn=Wm#
+.param load=2fF
 Xpmosa vdd a c vdds pt_st w=2*Wn
 Xpmosb c b z vdds pt_st w=2*Wn
 Xnmosa gnd a z gnds nt_st n=Wn
 Xnmosb gnd b z gnds nt_st w=Wn
 
-Cload z 0 20f
+Cload z 0 load
 
 * Input Stimuli (Step response)
-VA  a  0 PWL(0n 0 5ns 0 10ns pwr 15ns pwr)
-VB  b  0 PWL(0n 0 5ns pwr 10ns 0 15ns pwr)
+VA  a  0 PWL(0n 0 5ns 0 6ns 0 11ns 0 12ns 0 17ns 0 19ns 0 23ns 0)
+VB  b  0 PWL(0n 0 5ns 0 6ns pwr 11ns pwr 12ns 0 17ns 0 19ns pwr 23ns pwr)
 
-* Simulation Parameters ************************
-.tran 0.01ps 40ns START=0
-* Sweeps transistor width 
-* .tran 0.01ps 40ns START=0 sweep Wn START=Wn STOP=4*Wn STEP=Wn 
+* Simulation Parameters ************************ 
+.tran 0.01ps 25ns START=0 sweep load POI 2 2fF 10fF 
 
 .graph V(a)
 .graph V(b)
@@ -41,17 +40,16 @@ VB  b  0 PWL(0n 0 5ns pwr 10ns 0 15ns pwr)
 .option post
 
 * Measure propogation delay from rising edge of input A to falling edge of output Z
-.meas tran tpd_in01      trig v(a) val='pwr*0.5' cross=1
+.meas tran tpdf_1ns      trig v(b) val='pwr*0.5' cross=1
 +                        targ v(z) val='pwr*0.5' cross=1 
-
-* Measure output delay from falling edge of output Z
-.meas tran ttr           trig v(z) val='pwr*0.8' fall=1
-+                        targ v(z) val='pwr*0.2' fall=1
+.meas tran tpdf_2ns      trig v(b) val='pwr*0.5' cross=3
++                        targ v(z) val='pwr*0.5' cross=3
 
 * Measures Power (cell leakage and dynamic)
-.meas tran leak_pow_in1  avg power FROM=12ns TO=14ns
-.meas tran leak_pow_in0  avg power FROM= 6ns TO= 8ns
-.meas tran dyn_pow       avg power FROM= 9ns TO=10ns
+.meas tran leak_pow_pwr  avg power FROM= 1ns TO= 3ns
+.meas tran leak_pow_gnd  avg power FROM= 8ns TO=10ns
+.meas tran dyn_pow_1ns   avg power FROM= 5ns TO= 6ns
+.meas tran dyn_pow_2ns   avg power FROM=17ns TO=19ns
 
 ************************************************
 

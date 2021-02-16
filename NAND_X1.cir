@@ -49,8 +49,8 @@ VB  b  0 PWL(0n 0 5ns 0 6ns pwr 11ns pwr 12ns 0 17ns 0 19ns pwr 23ns pwr)
 +                        targ v(z) val='pwr*0.5' cross=3
 
 * Measures Power (cell leakage and dynamic)
-.meas tran leak_pow_pwr  avg power FROM=7ns TO=9ns
-.meas tran leak_pow_gnd  avg power FROM=1ns TO=3ns
+.meas tran leak_pow_pwr  avg power FROM=1ns TO=3ns
+.meas tran leak_pow_gnd  avg power FROM=8ns TO=10ns
 .meas tran dyn_pow_1ns   avg power FROM=5ns TO=6ns
 .meas tran dyn_pow_2ns   avg power FROM=5ns TO=7ns
 
