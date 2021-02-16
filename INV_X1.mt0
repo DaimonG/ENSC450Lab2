@@ -1,6 +1,11 @@
 $DATA1 SOURCE='HSPICE' VERSION='D-2010.03-SP2 32-BIT'
-.TITLE 'inverter: basic example'
- tpd_in01         ttr              leak_pow_in1     leak_pow_in0      
- dyn_pow          temper           alter#            
-  6.738e-10        5.300e-10        5.622e-10        4.019e-11        
-  5.817e-06        125.0000        1                 
+.TITLE 'inv_x1'
+ load             tpdf_1ns         tpdf_2ns         leak_pow_gnd      
+                  leak_pow_pwr     dyn_pow_1ns      dyn_pow_2ns       
+                  temper           alter#            
+  2.000e-15        3.019e-10        3.519e-10        4.019e-11        
+                   5.622e-10        1.957e-06        9.986e-07        
+                   125.0000        1                 
+  1.000e-14        4.987e-10        6.089e-10        4.019e-11        
+                   5.622e-10        4.851e-06        3.162e-06        
+                   125.0000        1                 

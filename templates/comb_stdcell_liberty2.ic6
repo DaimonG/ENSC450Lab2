@@ -1,20 +1,19 @@
 * "simulator" "HSPICE" 
 * "version" "D-2010.03-SP2 32-BIT"
 * "format" "HSP"
-* "rundate" "15:43:23 02/15/2021 "
-* "netlist" "NAND_X1.cir "
-* "runtitle" "nand_x1"
+* "rundate" "13:40:09 02/15/2021 "
+* "netlist" "comb_stdcell_liberty2.cir "
+* "runtitle" "nor 10"
 * time =    0.            
-* temperature =  125.0000        
+* temperature =   25.0000        
 *** BEGIN: Saved Operating Point ***                     
 .option 
 + gmindc=   1.0000p       
 .nodeset
-+ a =   1.0500        
-+ b =   0.            
-+ c = 822.8152m       
++ a =   1.2000        
 + gnds =   0.            
-+ vdd =   1.0500        
-+ vdds =   1.0500        
-+ z =   1.0500        
++ vdd =   1.2000        
++ vdds =   1.2000        
++ z =   9.4668n       
++ xcell.st = 307.6358m       
 ***   END: Saved Operating Point ***                     

@@ -1,9 +1,9 @@
 * "simulator" "HSPICE" 
 * "version" "D-2010.03-SP2 32-BIT"
 * "format" "HSP"
-* "rundate" "18:29:55 02/10/2021 "
+* "rundate" "15:50:06 02/15/2021 "
 * "netlist" "INV_X1.cir "
-* "runtitle" "inverter: basic example"
+* "runtitle" "inv_x1"
 * time =    0.            
 * temperature =  125.0000        
 *** BEGIN: Saved Operating Point ***                     

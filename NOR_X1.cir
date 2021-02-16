@@ -1,4 +1,4 @@
-Inverter: Basic Example
+NOR_X1
 
 * Technology Dependent design rules/parameters
 .include /CMC/setups/ensc450/HSPICE/cmosp18/rules.inc

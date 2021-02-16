@@ -1,0 +1,324 @@
+***** HSPICE -- D-2010.03-SP2 32-BIT (Aug 26 2010) linux ******
+ Input File: comb_stdcell_liberty2.cir
+ lic:
+ lic: FLEXlm: v10.8
+ lic: USER:   escmc29              HOSTNAME: ensc-esil-22
+ lic: HOSTID:                      PID:      17435
+ lic: Using FLEXlm license file:
+ lic: 6053@142.58.21.5
+ lic: Checkout 1 hspice
+ lic: License/Maintenance for hspice will expire on 21-aug-2021/2020.03
+ lic: 1(in_use)/500(total) FLOATING license(s) on SERVER 142.58.21.5
+ lic:
+ init: begin read circuit files,  cpu clock=  1.00E-02
+       option search   = /CMC/tools/synopsys/hspice_vD-2010.03-SP2/hspice
+       option runlvl
+       option search   = /CMC/setups/ensc450/HSPICE/libraries
+       option post
+ init: end read circuit files,  cpu clock=  2.00E-02 memory=    150 kb
+ init: begin check errors,  cpu clock=  2.00E-02
+ init: end check errors,  cpu clock=  2.00E-02 memory=    151 kb
+ init: begin setup matrix, pivot=     0 cpu clock=  2.00E-02
+       establish matrix -- done,  cpu clock=  2.00E-02 memory=    152 kb
+       re-order matrix -- done,  cpu clock=  2.00E-02 memory=    152 kb
+ init: end setup matrix,  cpu clock=  2.00E-02 memory=    161 kb
+ sweep: parameter       parameter1       begin, #sweeps =   2
+ parameter: ttran           =    2.00E-10
+ dcop: begin dcop,  cpu clock=  2.00E-02
+ dcop: end dcop,  cpu clock=  2.00E-02 memory=    161 kb  tot_iter=       3
+ output: comb_stdcell_liberty2.mt0
+ sweep: tran tran1    begin, stop_t=  4.00E-08 #sweeps=**** cpu clock=  2.00E-02
+ tran: time= 5.5624E-09 tot_iter=      18 conv_iter=       9 cpu clock= 2.00E-02
+ tran: time= 9.5624E-09 tot_iter=      22 conv_iter=      11 cpu clock= 2.00E-02
+ tran: time= 1.3562E-08 tot_iter=      26 conv_iter=      13 cpu clock= 3.00E-02
+ tran: time= 1.7562E-08 tot_iter=      30 conv_iter=      15 cpu clock= 3.00E-02
+ tran: time= 2.0000E-08 tot_iter=      38 conv_iter=      19 cpu clock= 3.00E-02
+ tran: time= 2.4310E-08 tot_iter=      46 conv_iter=      23 cpu clock= 3.00E-02
+ tran: time= 2.8310E-08 tot_iter=      50 conv_iter=      25 cpu clock= 4.00E-02
+ tran: time= 3.2310E-08 tot_iter=      54 conv_iter=      27 cpu clock= 4.00E-02
+ tran: time= 3.6310E-08 tot_iter=      58 conv_iter=      29 cpu clock= 4.00E-02
+ tran: time= 4.0000E-08 tot_iter=      62 conv_iter=      31 cpu clock= 4.00E-02
+ sweep: tran tran1    end,  cpu clock=  4.00E-02 memory=    161 kb
+ parameter: ttran           =    1.00E-09
+ dcop: begin dcop,  cpu clock=  4.00E-02
+ dcop: end dcop,  cpu clock=  4.00E-02 memory=    161 kb  tot_iter=       6
+ output: comb_stdcell_liberty2.mt0
+ sweep: tran tran2    begin, stop_t=  4.00E-08 #sweeps=**** cpu clock=  4.00E-02
+ tran: time= 5.5624E-09 tot_iter=      18 conv_iter=       9 cpu clock= 5.00E-02
+ tran: time= 9.5624E-09 tot_iter=      22 conv_iter=      11 cpu clock= 5.00E-02
+ tran: time= 1.3562E-08 tot_iter=      26 conv_iter=      13 cpu clock= 5.00E-02
+ tran: time= 1.7562E-08 tot_iter=      30 conv_iter=      15 cpu clock= 5.00E-02
+ tran: time= 2.0000E-08 tot_iter=      36 conv_iter=      18 cpu clock= 6.00E-02
+ tran: time= 2.4800E-08 tot_iter=      42 conv_iter=      21 cpu clock= 6.00E-02
+ tran: time= 2.8800E-08 tot_iter=      46 conv_iter=      23 cpu clock= 6.00E-02
+ tran: time= 3.2800E-08 tot_iter=      50 conv_iter=      25 cpu clock= 6.00E-02
+ tran: time= 3.6800E-08 tot_iter=      54 conv_iter=      27 cpu clock= 7.00E-02
+ tran: time= 4.0000E-08 tot_iter=      58 conv_iter=      29 cpu clock= 7.00E-02
+ sweep: tran tran2    end,  cpu clock=  7.00E-02 memory=    161 kb
+ sweep: parameter       parameter       1 end
+>info:         ***** hspice job concluded
+ init: begin read circuit files,  cpu clock=  1.44E+00
+       option brief    =     1.00
+ init: end read circuit files,  cpu clock=  1.45E+00 memory=    155 kb
+ init: begin check errors,  cpu clock=  1.45E+00
+ init: end check errors,  cpu clock=  1.46E+00 memory=    316 kb
+ init: begin setup matrix, pivot=     0 cpu clock=  1.46E+00
+       establish matrix -- done,  cpu clock=  1.46E+00 memory=    318 kb
+       re-order matrix -- done,  cpu clock=  1.46E+00 memory=    319 kb
+ init: end setup matrix,  cpu clock=  1.46E+00 memory=    330 kb
+ sweep: parameter       parameter1       begin, #sweeps =   2
+ parameter: ttran           =    2.00E-10
+ dcop: begin dcop,  cpu clock=  1.46E+00
+ dcop: end dcop,  cpu clock=  1.46E+00 memory=    330 kb  tot_iter=       4
+ output: comb_stdcell_liberty2.mt1
+ sweep: tran tran1    begin, stop_t=  4.00E-08 #sweeps=**** cpu clock=  1.46E+00
+ tran: time= 5.5624E-09 tot_iter=      18 conv_iter=       9 cpu clock= 1.46E+00
+ tran: time= 9.5624E-09 tot_iter=      22 conv_iter=      11 cpu clock= 1.46E+00
+ tran: time= 1.3562E-08 tot_iter=      26 conv_iter=      13 cpu clock= 1.46E+00
+ tran: time= 1.7562E-08 tot_iter=      30 conv_iter=      15 cpu clock= 1.47E+00
+ tran: time= 2.0000E-08 tot_iter=      53 conv_iter=      24 cpu clock= 1.47E+00
+ tran: time= 2.5262E-08 tot_iter=     112 conv_iter=      45 cpu clock= 1.47E+00
+ tran: time= 2.9262E-08 tot_iter=     116 conv_iter=      47 cpu clock= 1.47E+00
+ tran: time= 3.3262E-08 tot_iter=     120 conv_iter=      49 cpu clock= 1.48E+00
+ tran: time= 3.7262E-08 tot_iter=     124 conv_iter=      51 cpu clock= 1.48E+00
+ tran: time= 4.0000E-08 tot_iter=     128 conv_iter=      53 cpu clock= 1.48E+00
+ sweep: tran tran1    end,  cpu clock=  1.48E+00 memory=    331 kb
+ parameter: ttran           =    1.00E-09
+ dcop: begin dcop,  cpu clock=  1.48E+00
+ dcop: end dcop,  cpu clock=  1.48E+00 memory=    331 kb  tot_iter=       8
+ output: comb_stdcell_liberty2.mt1
+ sweep: tran tran2    begin, stop_t=  4.00E-08 #sweeps=**** cpu clock=  1.48E+00
+ tran: time= 5.5624E-09 tot_iter=      18 conv_iter=       9 cpu clock= 1.49E+00
+ tran: time= 9.5624E-09 tot_iter=      22 conv_iter=      11 cpu clock= 1.49E+00
+ tran: time= 1.3562E-08 tot_iter=      26 conv_iter=      13 cpu clock= 1.49E+00
+ tran: time= 1.7562E-08 tot_iter=      30 conv_iter=      15 cpu clock= 1.49E+00
+ tran: time= 2.0000E-08 tot_iter=     126 conv_iter=      48 cpu clock= 1.50E+00
+ tran: time= 2.4550E-08 tot_iter=     153 conv_iter=      60 cpu clock= 1.50E+00
+ tran: time= 2.8550E-08 tot_iter=     157 conv_iter=      62 cpu clock= 1.50E+00
+ tran: time= 3.2550E-08 tot_iter=     161 conv_iter=      64 cpu clock= 1.50E+00
+ tran: time= 3.6550E-08 tot_iter=     165 conv_iter=      66 cpu clock= 1.51E+00
+ tran: time= 4.0000E-08 tot_iter=     169 conv_iter=      68 cpu clock= 1.51E+00
+ sweep: tran tran2    end,  cpu clock=  1.51E+00 memory=    331 kb
+ sweep: parameter       parameter       1 end
+>info:         ***** hspice job concluded
+ init: begin read circuit files,  cpu clock=  1.52E+00
+       option brief    =     1.00
+ init: end read circuit files,  cpu clock=  1.53E+00 memory=    155 kb
+ init: begin check errors,  cpu clock=  1.53E+00
+ init: end check errors,  cpu clock=  1.53E+00 memory=    316 kb
+ init: begin setup matrix, pivot=     0 cpu clock=  1.53E+00
+       establish matrix -- done,  cpu clock=  1.53E+00 memory=    318 kb
+       re-order matrix -- done,  cpu clock=  1.53E+00 memory=    319 kb
+ init: end setup matrix,  cpu clock=  1.53E+00 memory=    330 kb
+ sweep: parameter       parameter1       begin, #sweeps =   2
+ parameter: ttran           =    2.00E-10
+ dcop: begin dcop,  cpu clock=  1.53E+00
+ dcop: end dcop,  cpu clock=  1.53E+00 memory=    330 kb  tot_iter=       4
+ output: comb_stdcell_liberty2.mt2
+ sweep: tran tran1    begin, stop_t=  4.00E-08 #sweeps=**** cpu clock=  1.53E+00
+ tran: time= 5.5624E-09 tot_iter=      18 conv_iter=       9 cpu clock= 1.53E+00
+ tran: time= 9.5624E-09 tot_iter=      22 conv_iter=      11 cpu clock= 1.54E+00
+ tran: time= 1.3562E-08 tot_iter=      26 conv_iter=      13 cpu clock= 1.54E+00
+ tran: time= 1.7562E-08 tot_iter=      30 conv_iter=      15 cpu clock= 1.54E+00
+ tran: time= 2.0000E-08 tot_iter=      71 conv_iter=      31 cpu clock= 1.54E+00
+ tran: time= 2.5776E-08 tot_iter=     123 conv_iter=      52 cpu clock= 1.55E+00
+ tran: time= 2.9776E-08 tot_iter=     127 conv_iter=      54 cpu clock= 1.55E+00
+ tran: time= 3.3776E-08 tot_iter=     131 conv_iter=      56 cpu clock= 1.55E+00
+ tran: time= 3.7776E-08 tot_iter=     135 conv_iter=      58 cpu clock= 1.55E+00
+ tran: time= 4.0000E-08 tot_iter=     139 conv_iter=      60 cpu clock= 1.56E+00
+ sweep: tran tran1    end,  cpu clock=  1.56E+00 memory=    331 kb
+ parameter: ttran           =    1.00E-09
+ dcop: begin dcop,  cpu clock=  1.56E+00
+ dcop: end dcop,  cpu clock=  1.56E+00 memory=    331 kb  tot_iter=       8
+ output: comb_stdcell_liberty2.mt2
+ sweep: tran tran2    begin, stop_t=  4.00E-08 #sweeps=**** cpu clock=  1.56E+00
+ tran: time= 5.5624E-09 tot_iter=      18 conv_iter=       9 cpu clock= 1.56E+00
+ tran: time= 9.5624E-09 tot_iter=      22 conv_iter=      11 cpu clock= 1.56E+00
+ tran: time= 1.3562E-08 tot_iter=      26 conv_iter=      13 cpu clock= 1.56E+00
+ tran: time= 1.7562E-08 tot_iter=      30 conv_iter=      15 cpu clock= 1.57E+00
+ tran: time= 2.0000E-08 tot_iter=      78 conv_iter=      32 cpu clock= 1.57E+00
+ tran: time= 2.5010E-08 tot_iter=     126 conv_iter=      51 cpu clock= 1.57E+00
+ tran: time= 2.9010E-08 tot_iter=     130 conv_iter=      53 cpu clock= 1.58E+00
+ tran: time= 3.3010E-08 tot_iter=     134 conv_iter=      55 cpu clock= 1.58E+00
+ tran: time= 3.7010E-08 tot_iter=     138 conv_iter=      57 cpu clock= 1.58E+00
+ tran: time= 4.0000E-08 tot_iter=     142 conv_iter=      59 cpu clock= 1.58E+00
+ sweep: tran tran2    end,  cpu clock=  1.58E+00 memory=    331 kb
+ sweep: parameter       parameter       1 end
+>info:         ***** hspice job concluded
+ init: begin read circuit files,  cpu clock=  1.60E+00
+       option brief    =     1.00
+ init: end read circuit files,  cpu clock=  1.61E+00 memory=    155 kb
+ init: begin check errors,  cpu clock=  1.61E+00
+ init: end check errors,  cpu clock=  1.61E+00 memory=    316 kb
+ init: begin setup matrix, pivot=     0 cpu clock=  1.61E+00
+       establish matrix -- done,  cpu clock=  1.61E+00 memory=    320 kb
+       re-order matrix -- done,  cpu clock=  1.61E+00 memory=    321 kb
+ init: end setup matrix,  cpu clock=  1.61E+00 memory=    335 kb
+ sweep: parameter       parameter1       begin, #sweeps =   2
+ parameter: ttran           =    2.00E-10
+ dcop: begin dcop,  cpu clock=  1.61E+00
+ dcop: end dcop,  cpu clock=  1.61E+00 memory=    335 kb  tot_iter=       4
+ output: comb_stdcell_liberty2.mt3
+ sweep: tran tran1    begin, stop_t=  4.00E-08 #sweeps=**** cpu clock=  1.61E+00
+ tran: time= 5.5624E-09 tot_iter=      18 conv_iter=       9 cpu clock= 1.61E+00
+ tran: time= 9.5624E-09 tot_iter=      22 conv_iter=      11 cpu clock= 1.61E+00
+ tran: time= 1.3562E-08 tot_iter=      26 conv_iter=      13 cpu clock= 1.62E+00
+ tran: time= 1.7562E-08 tot_iter=      30 conv_iter=      15 cpu clock= 1.62E+00
+ tran: time= 2.0000E-08 tot_iter=      69 conv_iter=      29 cpu clock= 1.62E+00
+ tran: time= 2.4340E-08 tot_iter=     119 conv_iter=      48 cpu clock= 1.62E+00
+ tran: time= 2.8340E-08 tot_iter=     123 conv_iter=      50 cpu clock= 1.63E+00
+ tran: time= 3.2340E-08 tot_iter=     127 conv_iter=      52 cpu clock= 1.63E+00
+ tran: time= 3.6340E-08 tot_iter=     131 conv_iter=      54 cpu clock= 1.63E+00
+ tran: time= 4.0000E-08 tot_iter=     135 conv_iter=      56 cpu clock= 1.64E+00
+ sweep: tran tran1    end,  cpu clock=  1.64E+00 memory=    335 kb
+ parameter: ttran           =    1.00E-09
+ dcop: begin dcop,  cpu clock=  1.64E+00
+ dcop: end dcop,  cpu clock=  1.64E+00 memory=    335 kb  tot_iter=       8
+ output: comb_stdcell_liberty2.mt3
+ sweep: tran tran2    begin, stop_t=  4.00E-08 #sweeps=**** cpu clock=  1.64E+00
+ tran: time= 5.5624E-09 tot_iter=      18 conv_iter=       9 cpu clock= 1.64E+00
+ tran: time= 9.5624E-09 tot_iter=      22 conv_iter=      11 cpu clock= 1.64E+00
+ tran: time= 1.3562E-08 tot_iter=      26 conv_iter=      13 cpu clock= 1.64E+00
+ tran: time= 1.7562E-08 tot_iter=      30 conv_iter=      15 cpu clock= 1.65E+00
+ tran: time= 2.0000E-08 tot_iter=     108 conv_iter=      41 cpu clock= 1.65E+00
+ tran: time= 2.5989E-08 tot_iter=     134 conv_iter=      53 cpu clock= 1.65E+00
+ tran: time= 2.9989E-08 tot_iter=     138 conv_iter=      55 cpu clock= 1.66E+00
+ tran: time= 3.3989E-08 tot_iter=     142 conv_iter=      57 cpu clock= 1.66E+00
+ tran: time= 3.7989E-08 tot_iter=     146 conv_iter=      59 cpu clock= 1.66E+00
+ tran: time= 4.0000E-08 tot_iter=     148 conv_iter=      60 cpu clock= 1.66E+00
+ sweep: tran tran2    end,  cpu clock=  1.66E+00 memory=    335 kb
+ sweep: parameter       parameter       1 end
+>info:         ***** hspice job concluded
+ init: begin read circuit files,  cpu clock=  1.67E+00
+       option brief    =     1.00
+ init: end read circuit files,  cpu clock=  1.68E+00 memory=    155 kb
+ init: begin check errors,  cpu clock=  1.68E+00
+ init: end check errors,  cpu clock=  1.68E+00 memory=    316 kb
+ init: begin setup matrix, pivot=     0 cpu clock=  1.68E+00
+       establish matrix -- done,  cpu clock=  1.68E+00 memory=    320 kb
+       re-order matrix -- done,  cpu clock=  1.68E+00 memory=    321 kb
+ init: end setup matrix,  cpu clock=  1.68E+00 memory=    335 kb
+ sweep: parameter       parameter1       begin, #sweeps =   2
+ parameter: ttran           =    2.00E-10
+ dcop: begin dcop,  cpu clock=  1.68E+00
+ dcop: end dcop,  cpu clock=  1.68E+00 memory=    335 kb  tot_iter=       4
+ output: comb_stdcell_liberty2.mt4
+ sweep: tran tran1    begin, stop_t=  4.00E-08 #sweeps=**** cpu clock=  1.68E+00
+ tran: time= 5.5624E-09 tot_iter=      18 conv_iter=       9 cpu clock= 1.69E+00
+ tran: time= 9.5624E-09 tot_iter=      22 conv_iter=      11 cpu clock= 1.69E+00
+ tran: time= 1.3562E-08 tot_iter=      26 conv_iter=      13 cpu clock= 1.69E+00
+ tran: time= 1.7562E-08 tot_iter=      30 conv_iter=      15 cpu clock= 1.69E+00
+ tran: time= 2.0000E-08 tot_iter=      69 conv_iter=      29 cpu clock= 1.70E+00
+ tran: time= 2.5428E-08 tot_iter=     136 conv_iter=      56 cpu clock= 1.70E+00
+ tran: time= 2.9428E-08 tot_iter=     140 conv_iter=      58 cpu clock= 1.70E+00
+ tran: time= 3.3428E-08 tot_iter=     144 conv_iter=      60 cpu clock= 1.71E+00
+ tran: time= 3.7428E-08 tot_iter=     148 conv_iter=      62 cpu clock= 1.71E+00
+ tran: time= 4.0000E-08 tot_iter=     152 conv_iter=      64 cpu clock= 1.71E+00
+ sweep: tran tran1    end,  cpu clock=  1.71E+00 memory=    335 kb
+ parameter: ttran           =    1.00E-09
+ dcop: begin dcop,  cpu clock=  1.71E+00
+ dcop: end dcop,  cpu clock=  1.71E+00 memory=    335 kb  tot_iter=       8
+ output: comb_stdcell_liberty2.mt4
+ sweep: tran tran2    begin, stop_t=  4.00E-08 #sweeps=**** cpu clock=  1.71E+00
+ tran: time= 5.5624E-09 tot_iter=      18 conv_iter=       9 cpu clock= 1.71E+00
+ tran: time= 9.5624E-09 tot_iter=      22 conv_iter=      11 cpu clock= 1.72E+00
+ tran: time= 1.3562E-08 tot_iter=      26 conv_iter=      13 cpu clock= 1.72E+00
+ tran: time= 1.7562E-08 tot_iter=      30 conv_iter=      15 cpu clock= 1.72E+00
+ tran: time= 2.0000E-08 tot_iter=      80 conv_iter=      33 cpu clock= 1.73E+00
+ tran: time= 2.4475E-08 tot_iter=     130 conv_iter=      53 cpu clock= 1.73E+00
+ tran: time= 2.8475E-08 tot_iter=     134 conv_iter=      55 cpu clock= 1.73E+00
+ tran: time= 3.2475E-08 tot_iter=     138 conv_iter=      57 cpu clock= 1.73E+00
+ tran: time= 3.6475E-08 tot_iter=     142 conv_iter=      59 cpu clock= 1.74E+00
+ tran: time= 4.0000E-08 tot_iter=     146 conv_iter=      61 cpu clock= 1.74E+00
+ sweep: tran tran2    end,  cpu clock=  1.74E+00 memory=    335 kb
+ sweep: parameter       parameter       1 end
+>info:         ***** hspice job concluded
+ init: begin read circuit files,  cpu clock=  1.75E+00
+       option brief    =     1.00
+ init: end read circuit files,  cpu clock=  1.76E+00 memory=    157 kb
+ init: begin check errors,  cpu clock=  1.76E+00
+ init: end check errors,  cpu clock=  1.77E+00 memory=    317 kb
+ init: begin setup matrix, pivot=     0 cpu clock=  1.77E+00
+       establish matrix -- done,  cpu clock=  1.77E+00 memory=    321 kb
+       re-order matrix -- done,  cpu clock=  1.77E+00 memory=    322 kb
+ init: end setup matrix,  cpu clock=  1.77E+00 memory=    335 kb
+ sweep: parameter       parameter1       begin, #sweeps =   2
+ parameter: ttran           =    2.00E-10
+ dcop: begin dcop,  cpu clock=  1.77E+00
+ dcop: end dcop,  cpu clock=  1.77E+00 memory=    335 kb  tot_iter=      15
+ output: comb_stdcell_liberty2.mt5
+ sweep: tran tran1    begin, stop_t=  4.00E-08 #sweeps=**** cpu clock=  1.77E+00
+ tran: time= 5.5624E-09 tot_iter=      18 conv_iter=       9 cpu clock= 1.77E+00
+ tran: time= 9.5624E-09 tot_iter=      22 conv_iter=      11 cpu clock= 1.77E+00
+ tran: time= 1.3562E-08 tot_iter=      26 conv_iter=      13 cpu clock= 1.77E+00
+ tran: time= 1.7562E-08 tot_iter=      30 conv_iter=      15 cpu clock= 1.78E+00
+ tran: time= 2.0000E-08 tot_iter=      90 conv_iter=      36 cpu clock= 1.78E+00
+ tran: time= 2.5025E-08 tot_iter=     153 conv_iter=      58 cpu clock= 1.78E+00
+ tran: time= 2.9025E-08 tot_iter=     157 conv_iter=      60 cpu clock= 1.79E+00
+ tran: time= 3.3025E-08 tot_iter=     161 conv_iter=      62 cpu clock= 1.79E+00
+ tran: time= 3.7025E-08 tot_iter=     165 conv_iter=      64 cpu clock= 1.79E+00
+ tran: time= 4.0000E-08 tot_iter=     169 conv_iter=      66 cpu clock= 1.79E+00
+ sweep: tran tran1    end,  cpu clock=  1.79E+00 memory=    336 kb
+ parameter: ttran           =    1.00E-09
+ dcop: begin dcop,  cpu clock=  1.79E+00
+ dcop: end dcop,  cpu clock=  1.80E+00 memory=    335 kb  tot_iter=      30
+ output: comb_stdcell_liberty2.mt5
+ sweep: tran tran2    begin, stop_t=  4.00E-08 #sweeps=**** cpu clock=  1.80E+00
+ tran: time= 5.5624E-09 tot_iter=      18 conv_iter=       9 cpu clock= 1.80E+00
+ tran: time= 9.5624E-09 tot_iter=      22 conv_iter=      11 cpu clock= 1.80E+00
+ tran: time= 1.3562E-08 tot_iter=      26 conv_iter=      13 cpu clock= 1.80E+00
+ tran: time= 1.7562E-08 tot_iter=      30 conv_iter=      15 cpu clock= 1.81E+00
+ tran: time= 2.0000E-08 tot_iter=     113 conv_iter=      42 cpu clock= 1.81E+00
+ tran: time= 2.4645E-08 tot_iter=     139 conv_iter=      53 cpu clock= 1.81E+00
+ tran: time= 2.8645E-08 tot_iter=     143 conv_iter=      55 cpu clock= 1.81E+00
+ tran: time= 3.2645E-08 tot_iter=     147 conv_iter=      57 cpu clock= 1.82E+00
+ tran: time= 3.6645E-08 tot_iter=     151 conv_iter=      59 cpu clock= 1.82E+00
+ tran: time= 4.0000E-08 tot_iter=     155 conv_iter=      61 cpu clock= 1.82E+00
+ sweep: tran tran2    end,  cpu clock=  1.82E+00 memory=    336 kb
+ sweep: parameter       parameter       1 end
+>info:         ***** hspice job concluded
+ init: begin read circuit files,  cpu clock=  1.83E+00
+       option brief    =     1.00
+ init: end read circuit files,  cpu clock=  1.84E+00 memory=    157 kb
+ init: begin check errors,  cpu clock=  1.84E+00
+ init: end check errors,  cpu clock=  1.84E+00 memory=    317 kb
+ init: begin setup matrix, pivot=     0 cpu clock=  1.84E+00
+       establish matrix -- done,  cpu clock=  1.84E+00 memory=    321 kb
+       re-order matrix -- done,  cpu clock=  1.84E+00 memory=    322 kb
+ init: end setup matrix,  cpu clock=  1.84E+00 memory=    335 kb
+ sweep: parameter       parameter1       begin, #sweeps =   2
+ parameter: ttran           =    2.00E-10
+ dcop: begin dcop,  cpu clock=  1.84E+00
+ dcop: end dcop,  cpu clock=  1.84E+00 memory=    335 kb  tot_iter=      15
+ output: comb_stdcell_liberty2.mt6
+ sweep: tran tran1    begin, stop_t=  4.00E-08 #sweeps=**** cpu clock=  1.84E+00
+ tran: time= 5.5624E-09 tot_iter=      18 conv_iter=       9 cpu clock= 1.85E+00
+ tran: time= 9.5624E-09 tot_iter=      22 conv_iter=      11 cpu clock= 1.85E+00
+ tran: time= 1.3562E-08 tot_iter=      26 conv_iter=      13 cpu clock= 1.85E+00
+ tran: time= 1.7562E-08 tot_iter=      30 conv_iter=      15 cpu clock= 1.85E+00
+ tran: time= 2.0000E-08 tot_iter=     102 conv_iter=      38 cpu clock= 1.86E+00
+ tran: time= 2.4195E-08 tot_iter=     157 conv_iter=      58 cpu clock= 1.86E+00
+ tran: time= 2.8195E-08 tot_iter=     161 conv_iter=      60 cpu clock= 1.86E+00
+ tran: time= 3.2195E-08 tot_iter=     165 conv_iter=      62 cpu clock= 1.86E+00
+ tran: time= 3.6195E-08 tot_iter=     169 conv_iter=      64 cpu clock= 1.87E+00
+ tran: time= 4.0000E-08 tot_iter=     173 conv_iter=      66 cpu clock= 1.87E+00
+ sweep: tran tran1    end,  cpu clock=  1.87E+00 memory=    336 kb
+ parameter: ttran           =    1.00E-09
+ dcop: begin dcop,  cpu clock=  1.87E+00
+ dcop: end dcop,  cpu clock=  1.87E+00 memory=    335 kb  tot_iter=      30
+ output: comb_stdcell_liberty2.mt6
+ sweep: tran tran2    begin, stop_t=  4.00E-08 #sweeps=**** cpu clock=  1.87E+00
+ tran: time= 5.5624E-09 tot_iter=      18 conv_iter=       9 cpu clock= 1.87E+00
+ tran: time= 9.5624E-09 tot_iter=      22 conv_iter=      11 cpu clock= 1.88E+00
+ tran: time= 1.3562E-08 tot_iter=      26 conv_iter=      13 cpu clock= 1.88E+00
+ tran: time= 1.7562E-08 tot_iter=      30 conv_iter=      15 cpu clock= 1.88E+00
+ tran: time= 2.0000E-08 tot_iter=     142 conv_iter=      54 cpu clock= 1.89E+00
+ tran: time= 2.4316E-08 tot_iter=     177 conv_iter=      68 cpu clock= 1.89E+00
+ tran: time= 2.8316E-08 tot_iter=     181 conv_iter=      70 cpu clock= 1.89E+00
+ tran: time= 3.2316E-08 tot_iter=     185 conv_iter=      72 cpu clock= 1.89E+00
+ tran: time= 3.6316E-08 tot_iter=     189 conv_iter=      74 cpu clock= 1.89E+00
+ tran: time= 4.0000E-08 tot_iter=     193 conv_iter=      76 cpu clock= 1.90E+00
+ sweep: tran tran2    end,  cpu clock=  1.90E+00 memory=    336 kb
+ sweep: parameter       parameter       1 end
+>info:         ***** hspice job concluded
+ lic: Release hspice token(s)
