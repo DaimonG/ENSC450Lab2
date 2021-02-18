@@ -147,22 +147,22 @@ library (spicelib) {
 	        	cell_fall(Propagation_Delay) {
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.106,0.246","0.231,0.437");
+                                values ("0.302,0.499","0.444,0.742");
                         }
                 	cell_rise(Propagation_Delay) {
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.106,0.246","0.231,0.437");
+                                values ("0.352,0.609","0.507,0.876");
                         }
                 	fall_transition(Out_Transition) {
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.081,0.173","0.250,0.316");
+                                values ("0.176,0.311","0.278,0.446");
                         }
                 	rise_transition(Out_Transition) {
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.081,0.173","0.250,0.316");
+                                values ("0.225,0.458","0.340,0.571");
                         } 
 	      
 		} /* End Timing */		
@@ -171,11 +171,11 @@ library (spicelib) {
 
 
 /******************************************************************************************
-   Module           : ND_X1
+   Module           : NAND_X1
    Cell Description : Combinational cell (NAND2_X1) with drive strength X1
 *******************************************************************************************/
 
-  cell (ND_X1) {
+  cell (NAND_X1) {
 
 	pg_pin(VDD) {
                 voltage_name : VDD;
@@ -187,21 +187,21 @@ library (spicelib) {
         }
 
 	drive_strength      : 1;
-  	area                : 4;
+  	area                : 8;
 
   	/* Input pins: No timing, but need to specify input capacitance to enable Timing Analyses */
 	pin (A) {
                 direction               : input;
-		capacitance             : 3;
+		capacitance             : 4;
         }
 	pin (B) {
                 direction               : input;
-		capacitance             : 3;
+		capacitance             : 4;
         }
 
 	pin (Z) {
     		direction   : output;  
-		max_capacitance   : 20;
+		max_capacitance   : 10;
     		function    : "!(A & B)";
 
 	/* NOTE3: A 2-inputs cell may have a different behavior depending on whether the transaction is due to pin A or pin B. 
@@ -212,22 +212,22 @@ library (spicelib) {
 			cell_fall(Propagation_Delay) {
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.133,0.150","0.262,0.335");
+                                values ("0.429,0.720","0.592,0.946");
                         }
                 	cell_rise(Propagation_Delay) {
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.285,0.416","0.462,0.669");
+                                values ("0.419,0.655","0.615,0.934");
                         }
                 	fall_transition(Out_Transition) {
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.136,0.207","0.224,0.321");
+                                values ("0.230,0.574","0.324,0.635");
                         }
                 	rise_transition(Out_Transition) { 
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.190,0.272","0.322,0.450");
+                                values ("0.247,0.509","0.377,0.597");
                         }
 		} /* End Timing Related to Pin A */
 		timing () {
@@ -235,22 +235,22 @@ library (spicelib) {
 			cell_fall(Propagation_Delay) {
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.133,0.150","0.262,0.335");
+                                values ("0.429,0.720","0.592,0.946");
                         }
                 	cell_rise(Propagation_Delay) {
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.285,0.416","0.462,0.669");
+                                values ("0.419,0.655","0.615,0.934");
                         }
                 	fall_transition(Out_Transition) {
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.136,0.207","0.224,0.321");
+                                values ("0.230,0.574","0.324,0.635");
                         }
                 	rise_transition(Out_Transition) {
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.190,0.272","0.322,0.450");
+                                values ("0.247,0.509","0.377,0.597");
                         }
 		} /* End Timing Related to Pin B */
 		
@@ -264,7 +264,7 @@ library (spicelib) {
    Cell Description : Combinational cell (NOR2_X1) with drive strength X1
 *******************************************************************************************/
 
-  cell (NR_X1) {
+  cell (NOR_X1) {
 
 	pg_pin(VDD) {
                 voltage_name : VDD;
@@ -276,7 +276,7 @@ library (spicelib) {
         }
 
 	drive_strength      : 1;
-  	area                : 4;
+  	area                : 10;
 
   	/* Input pins: No timing, but need to specify input capacitance to enable Timing Analyses */
 	pin (A) {
@@ -290,7 +290,7 @@ library (spicelib) {
 
 	pin (Z) {
     		direction   : output;  
-		max_capacitance   : 20;
+		max_capacitance   : 10;
     		function    : "!(A | B)";
 
 	/* NOTE3: A 2-inputs cell may have a different behavior depending on whether the transaction is due to pin A or pin B. 
@@ -301,22 +301,22 @@ library (spicelib) {
 			cell_fall(Propagation_Delay) {
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.214,0.281","0.336,0.454");
+                                values ("0.358,0.531","0.542,0.797");
                         }
                 	cell_rise(Propagation_Delay) {
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.260,0.345","0.431,0.571");
+                                values ("0.547,1.04","0.711,1.23");
                         }
                 	fall_transition(Out_Transition) {
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.147,0.219","0.238,0.338");
+                                values ("0.194,0.334","0.292,0.452");
                         }
                 	rise_transition(Out_Transition) { 
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.168,0.240","0.325,0.415");
+                                values ("0.336,0.978","0.426,1.0");
                         }
 		} /* End Timing Related to Pin A */
 		timing () {
@@ -324,22 +324,22 @@ library (spicelib) {
 			cell_fall(Propagation_Delay) {
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.214,0.281","0.336,0.454");
+                                values ("0.358,0.531","0.542,0.797");
                         }
                 	cell_rise(Propagation_Delay) {
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.260,0.345","0.431,0.571");
+                                values ("0.547,1.04","0.711,1.23");
                         }
                 	fall_transition(Out_Transition) {
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.147,0.219","0.238,0.338");
+                                values ("0.194,0.334","0.292,0.452");
                         }
                 	rise_transition(Out_Transition) { 
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.168,0.240","0.325,0.415");
+                                values ("0.336,0.978","0.426,1.0");
 			}
 		} /* End Timing Related to Pin B */
 		
