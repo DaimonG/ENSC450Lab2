@@ -20,10 +20,11 @@ Vgnds gnds 0 dc 0
 * Logic 
 .param Wn=Wm#
 .param load=2fF
-Xpmosa vdd a z vdds pt_st w=2*Wn
-Xpmosb vdd b z vdds pt_st w=2*Wn
-Xnmosa c a z gnds nt_st n=Wn
-Xnmosb gnd b c gnds nt_st w=Wn
+.param ds=1
+Xpmosa vdd a z vdds pt_st w=ds*2*Wn
+Xpmosb vdd b z vdds pt_st w=ds*2*Wn
+Xnmosa c a z gnds nt_st w=ds*Wn
+Xnmosb gnd b c gnds nt_st w=ds*Wn
 
 Cload z 0 load
 
