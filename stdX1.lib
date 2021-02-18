@@ -365,7 +365,8 @@ cell (AND_X1) {
 
         drive_strength      : 1;
         area                : 11;
-
+        
+        cell_leakage_power      : 1.64;
         /* Input pins: No timing, but need to specify input capacitance
 to enable Timing Analyses */
         pin (A) {

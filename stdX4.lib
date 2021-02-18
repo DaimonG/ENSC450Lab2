@@ -4,7 +4,7 @@
 /************************************************************/
 /* Note: Area Unit is um */
    
-library (X4 stdcell lib) {
+library (stdX4) {
 
   /* Documentation Attributes */
   date                                  : "Spring 2021";
@@ -365,6 +365,8 @@ X4
 
         drive_strength      : 4;
         area                : 44;
+        
+        cell_leakage_power      : 1.64;
 
         /* Input pins: No timing, but need to specify input capacitance
         to enable Timing Analyses */
