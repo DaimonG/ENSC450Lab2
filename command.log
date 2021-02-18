@@ -1,6 +1,6 @@
 #@ # 
 #@ # Running lc_shell Version O-2018.06-SP5 for linux64 -- Jan 17, 2019
-#@ # Date:   Wed Feb 17 18:29:43 2021
+#@ # Date:   Wed Feb 17 18:35:47 2021
 #@ # Run by: escmc29@ensc-esil-18
 #@ 
 
@@ -4828,4 +4828,6 @@ source /CMC/tools/synopsys/syn_vO-2018.06-SP5/admin/setup/.synopsys_dc.setup
 
 #@ # -- End source /CMC/tools/synopsys/syn_vO-2018.06-SP5/admin/setup/.synopsys_dc.setup
 
+read_lib part1.lib
+write_lib Part1Library -format db -output part1.db
 exit

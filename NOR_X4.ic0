@@ -1,0 +1,20 @@
+* "simulator" "HSPICE" 
+* "version" "D-2010.03-SP2 32-BIT"
+* "format" "HSP"
+* "rundate" "19:30:23 02/17/2021 "
+* "netlist" "NOR_X4.cir "
+* "runtitle" "nor_x4"
+* time =    0.            
+* temperature =  125.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ a =   1.0500        
++ b =   0.            
++ c = 384.3945m       
++ gnds =   0.            
++ vdd =   1.0500        
++ vdds =   1.0500        
++ z =   7.4084u       
+***   END: Saved Operating Point ***                     

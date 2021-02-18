@@ -4,7 +4,7 @@
 /************************************************************/
 /* Note: Area Unit is um */
    
-library (spicelib) {
+library (Part1Library) {
 
   /* Documentation Attributes */
   date                                  : "Spring 2021";
