@@ -1,9 +1,9 @@
 * "simulator" "HSPICE" 
 * "version" "D-2010.03-SP2 32-BIT"
 * "format" "HSP"
-* "rundate" "19:09:08 02/17/2021 "
+* "rundate" "18:50:07 02/21/2021 "
 * "netlist" "AND_X1.cir "
-* "runtitle" "nand_x1"
+* "runtitle" "and_x1"
 * time =    0.            
 * temperature =  125.0000        
 *** BEGIN: Saved Operating Point ***                     

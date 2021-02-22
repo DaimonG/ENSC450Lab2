@@ -398,7 +398,7 @@ to enable Timing Analyses */
                         fall_transition(Out_Transition) {
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.269,0.626","0.362,0.673");
+                                values ("0.0702,0.120","0.0856,0.118");
                         }
                         rise_transition(Out_Transition) { 
                                 index_1 ("1,  2");
@@ -422,7 +422,7 @@ to enable Timing Analyses */
                         fall_transition(Out_Transition) {
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.269,0.626","0.362,0.673");
+                                values ("0.0702,0.120","0.0856,0.118");
                         }
                         rise_transition(Out_Transition) {
                                 index_1 ("1,  2");
@@ -717,12 +717,12 @@ X4
                         fall_transition(Out_Transition) {
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.202,0.293","0.291,0.386");
+                                values ("0.0569,0.0616","0.0688,0.0758");
                         }
                         rise_transition(Out_Transition) { 
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.735,0.917","0.852,0.100");
+                                values ("0.0735,0.0917","0.0852,0.0100");
                         }
                 } /* End Timing Related to Pin A */
                 timing () {
@@ -740,12 +740,12 @@ X4
                         fall_transition(Out_Transition) {
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.202,0.293","0.291,0.386");
+                                values ("0.0569,0.0616","0.0688,0.0758");
                         }
                         rise_transition(Out_Transition) {
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.735,0.917","0.852,0.100");
+                                values ("0.0735,0.0917","0.0852,0.0100");
                         }
                 } /* End Timing Related to Pin B */
         } /* End of Pin Z */

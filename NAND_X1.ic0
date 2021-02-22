@@ -1,7 +1,7 @@
 * "simulator" "HSPICE" 
 * "version" "D-2010.03-SP2 32-BIT"
 * "format" "HSP"
-* "rundate" "17:51:26 02/17/2021 "
+* "rundate" "18:15:13 02/21/2021 "
 * "netlist" "NAND_X1.cir "
 * "runtitle" "nand_x1"
 * time =    0.            
@@ -12,7 +12,7 @@
 .nodeset
 + a =   1.0500        
 + b =   0.            
-+ c = 822.8152m       
++ f = 822.8152m       
 + gnds =   0.            
 + vdd =   1.0500        
 + vdds =   1.0500        

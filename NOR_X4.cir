@@ -8,6 +8,7 @@ NOR_X4
 .protect
 .LIB `/CMC/setups/ensc450/HSPICE/cmosp18/log018.l' SS  $ typical process corner.
 .unprotect
+* WORST CASE SIMULATION
 
 * Supply Sources
 .param pwr=1.05 
@@ -63,12 +64,6 @@ VA  a  0 PWL(0n pwr 3ns pwr 4ns 0 8ns 0  9ns pwr 13ns pwr 15ns 0 19ns 0 21ns pwr
 +                        targ v(z) val='pwr*0.2' fall=1
 .meas tran ttf_2ns       trig v(z) val='pwr*0.8' fall=2
 +                        targ v(z) val='pwr*0.2' fall=2
-
-* Measures Power (cell leakage and dynamic)
-.meas tran leak_pow_pwr  avg power FROM= 1ns TO= 3ns
-.meas tran leak_pow_gnd  avg power FROM= 8ns TO=10ns
-.meas tran dyn_pow_1ns   avg power FROM= 5ns TO= 6ns
-.meas tran dyn_pow_2ns   avg power FROM=17ns TO=19ns
 
 ************************************************
 

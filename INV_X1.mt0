@@ -2,16 +2,13 @@ $DATA1 SOURCE='HSPICE' VERSION='D-2010.03-SP2 32-BIT'
 .TITLE 'inv_x1'
  load             tpdf_1ns         tpdf_2ns         tpdr_1ns          
                   tpdr_2ns         ttr_1ns          ttr_2ns           
-                  ttf_1ns          ttf_2ns          leak_pow_gnd      
-                  leak_pow_pwr     dyn_pow_1ns      dyn_pow_2ns       
-                  temper           alter#            
+                  ttf_1ns          ttf_2ns          temper            
+                  alter#            
   2.000e-15        3.019e-10        4.443e-10        3.519e-10        
                    5.068e-10        2.251e-10        3.397e-10        
-                   1.765e-10        2.782e-10        4.019e-11        
-                   5.622e-10        1.957e-06        9.986e-07        
-                   125.0000        1                 
+                   1.765e-10        2.782e-10        125.0000         
+                  1                 
   1.000e-14        4.987e-10        7.423e-10        6.089e-10        
                    8.764e-10        4.578e-10        5.715e-10        
-                   3.112e-10        4.459e-10        4.019e-11        
-                   5.622e-10        4.851e-06        3.162e-06        
-                   125.0000        1                 
+                   3.112e-10        4.459e-10        125.0000         
+                  1                 

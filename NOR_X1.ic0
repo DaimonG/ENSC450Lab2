@@ -1,7 +1,7 @@
 * "simulator" "HSPICE" 
 * "version" "D-2010.03-SP2 32-BIT"
 * "format" "HSP"
-* "rundate" "17:53:03 02/17/2021 "
+* "rundate" "18:22:06 02/21/2021 "
 * "netlist" "NOR_X1.cir "
 * "runtitle" "nor_x1"
 * time =    0.            

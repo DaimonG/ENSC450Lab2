@@ -9,6 +9,8 @@ INV_X1
 .LIB `/CMC/setups/ensc450/HSPICE/cmosp18/log018.l' SS  $ typical process corner.
 .unprotect
 
+* WORST CASE SIMULATION
+
 * Supply Sources
 .param pwr=1.05 
 .temp 125
@@ -30,10 +32,7 @@ Cload z 0 load
 VA  a  0 PWL(0n 0 5ns 0 6ns pwr 11ns pwr 12ns 0 17ns 0 19ns pwr 23ns pwr 25ns pwr 27ns 0)
 
 
-* Simulation Parameters ************************
-*.tran 0.01ps 40ns START=0
-* Sweeps transistor width 
-* .tran 0.01ps 40ns START=0 sweep Wn START=Wn STOP=4*Wn STEP=Wn 
+* Simulation Parameters ************************ 
 .tran 0.01ps 30ns START=0 sweep load POI 2 2fF 10fF
 
 .graph V(a)
@@ -63,13 +62,6 @@ VA  a  0 PWL(0n 0 5ns 0 6ns pwr 11ns pwr 12ns 0 17ns 0 19ns pwr 23ns pwr 25ns pw
 +                        targ v(z) val='pwr*0.2' fall=1
 .meas tran ttf_2ns       trig v(z) val='pwr*0.8' fall=2
 +                        targ v(z) val='pwr*0.2' fall=2
-
-* Measures Power (cell leakage and dynamic)
-.meas tran leak_pow_gnd  avg power FROM=1ns TO=3ns
-.meas tran leak_pow_pwr  avg power FROM=7ns TO=9ns
-.meas tran dyn_pow_1ns   avg power FROM=5ns TO=6ns
-.meas tran dyn_pow_2ns   avg power FROM=17ns TO=19ns
-
 ************************************************
 
 .end

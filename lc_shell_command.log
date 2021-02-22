@@ -1,6 +1,6 @@
 #@ # 
 #@ # Running lc_shell Version O-2018.06-SP5 for linux64 -- Jan 16, 2019
-#@ # Date:   Thu Feb 18 15:01:57 2021
+#@ # Date:   Sun Feb 21 19:08:51 2021
 #@ # Run by: escmc29@ensc-esil-18
 #@ 
 
@@ -2488,12 +2488,12 @@ source /CMC/tools/synopsys/lc_vO-2018.06-SP5/admin/setup//.synopsys_lc.setup
 #@ set_check_library_options
 #@ # -- End source /CMC/tools/synopsys/lc_vO-2018.06-SP5/admin/setup//.synopsys_lc.setup
 
-source -echo -verbose /tmp/23086_1613689315682997/nglc_shell_command.tcl
-#@ # -- Starting source /tmp/23086_1613689315682997/nglc_shell_command.tcl
+source -echo -verbose /tmp/9887_1613963329661287/nglc_shell_command.tcl
+#@ # -- Starting source /tmp/9887_1613963329661287/nglc_shell_command.tcl
 
 #@ catch { set ::physopt_ignore_lpin_fanout [list [binary format H* 66616c7365]] }
 #@ catch { set ::vhdllib_insert_timing [list [binary format H* 66616c7365]] }
-#@ catch { set ::nglc_intermediate_db_files "" }
+#@ catch { set ::nglc_intermediate_db_files [list [binary format H* 202f746d702f393838375f313631333936333237323032313434302f73746458342e6462]] }
 #@ catch { set ::ldd_return_val [list [binary format H* 30]] }
 #@ catch { set ::compile_hold_reduce_cell_count [list [binary format H* 66616c7365]] }
 #@ catch { set ::test_disable_enhanced_dft_drc_reporting [list [binary format H* 66616c7365]] }
@@ -3126,7 +3126,7 @@ source -echo -verbose /tmp/23086_1613689315682997/nglc_shell_command.tcl
 #@ catch { set ::rc_output_threshold_pct_fall [list [binary format H* 35302e303030303030]] }
 #@ catch { set ::bin_path [list [binary format H* 2f434d432f746f6f6c732f73796e6f707379732f73796e5f764f2d323031382e30362d5350352f6c696e757836342f73796e2f62696e]] }
 #@ catch { set ::hdlin_mux_rp_limit [list [binary format H* 3132387834]] }
-#@ catch { set ::nglc_log_path [list [binary format H* 32333038365f31363133363839333135363832393937]] }
+#@ catch { set ::nglc_log_path [list [binary format H* 393838375f31363133393633333239363631323837]] }
 #@ catch { set ::timing_report_attributes [list [binary format H* 646f6e745f746f75636820646f6e745f757365206d61705f6f6e6c792073697a655f6f6e6c7920696465616c5f6e657420696e6665617369626c655f7061746873]] }
 #@ catch { set ::atpg_bidirect_output_only [list [binary format H* 66616c7365]] }
 #@ catch { set ::compile_negative_logic_methodology [list [binary format H* 66616c7365]] }
