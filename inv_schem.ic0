@@ -1,0 +1,16 @@
+* "simulator" "HSPICE" 
+* "version" "D-2010.03-SP2 32-BIT"
+* "format" "HSP"
+* "rundate" "20:02:49 03/04/2021 "
+* "netlist" "inv_schem.cir "
+* "runtitle" "* hspice deck"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ a =   0.            
++ vdd! =   1.2000        
++ z =   1.2000        
+***   END: Saved Operating Point ***                     

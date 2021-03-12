@@ -1,7 +1,7 @@
 * "simulator" "HSPICE" 
 * "version" "D-2010.03-SP2 32-BIT"
 * "format" "HSP"
-* "rundate" "18:22:06 02/21/2021 "
+* "rundate" "17:12:53 03/10/2021 "
 * "netlist" "NOR_X1.cir "
 * "runtitle" "nor_x1"
 * time =    0.            
@@ -12,9 +12,9 @@
 .nodeset
 + a =   1.0500        
 + b =   0.            
-+ c = 380.5146m       
++ c = 378.5503m       
 + gnds =   0.            
 + vdd =   1.0500        
 + vdds =   1.0500        
-+ z =  11.7966u       
++ z =  17.4883u       
 ***   END: Saved Operating Point ***                     

@@ -3,12 +3,12 @@
  lic:
  lic: FLEXlm: v10.8
  lic: USER:   escmc29              HOSTNAME: ensc-esil-18
- lic: HOSTID:                      PID:      3159
+ lic: HOSTID:                      PID:      4739
  lic: Using FLEXlm license file:
  lic: 6053@142.58.21.5
  lic: Checkout 1 hspice
  lic: License/Maintenance for hspice will expire on 21-aug-2021/2020.03
- lic: 2(in_use)/500(total) FLOATING license(s) on SERVER 142.58.21.5
+ lic: 1(in_use)/500(total) FLOATING license(s) on SERVER 142.58.21.5
  lic:
  init: begin read circuit files,  cpu clock=  1.00E-02
        option search   = /CMC/tools/synopsys/hspice_vD-2010.03-SP2/hspice
@@ -28,15 +28,15 @@
  output: NAND_X1.mt0
  sweep: tran tran1    begin, stop_t=  3.00E-08 #sweeps=**** cpu clock=  2.00E-02
  tran: time= 3.0624E-09 tot_iter=      16 conv_iter=       8 cpu clock= 2.00E-02
- tran: time= 6.0000E-09 tot_iter=      92 conv_iter=      34 cpu clock= 3.00E-02
- tran: time= 1.0155E-08 tot_iter=     134 conv_iter=      51 cpu clock= 3.00E-02
- tran: time= 1.2000E-08 tot_iter=     190 conv_iter=      71 cpu clock= 3.00E-02
- tran: time= 1.5217E-08 tot_iter=     243 conv_iter=      89 cpu clock= 3.00E-02
- tran: time= 1.8064E-08 tot_iter=     271 conv_iter=      99 cpu clock= 4.00E-02
- tran: time= 2.2104E-08 tot_iter=     366 conv_iter=     132 cpu clock= 4.00E-02
- tran: time= 2.4476E-08 tot_iter=     387 conv_iter=     141 cpu clock= 4.00E-02
- tran: time= 2.7246E-08 tot_iter=     462 conv_iter=     167 cpu clock= 4.00E-02
- tran: time= 3.0000E-08 tot_iter=     471 conv_iter=     170 cpu clock= 5.00E-02
+ tran: time= 6.0000E-09 tot_iter=     104 conv_iter=      38 cpu clock= 3.00E-02
+ tran: time= 9.4466E-09 tot_iter=     133 conv_iter=      50 cpu clock= 3.00E-02
+ tran: time= 1.2000E-08 tot_iter=     181 conv_iter=      68 cpu clock= 3.00E-02
+ tran: time= 1.5450E-08 tot_iter=     240 conv_iter=      88 cpu clock= 4.00E-02
+ tran: time= 1.8025E-08 tot_iter=     267 conv_iter=      98 cpu clock= 4.00E-02
+ tran: time= 2.1615E-08 tot_iter=     373 conv_iter=     135 cpu clock= 4.00E-02
+ tran: time= 2.4551E-08 tot_iter=     394 conv_iter=     144 cpu clock= 4.00E-02
+ tran: time= 2.7110E-08 tot_iter=     473 conv_iter=     171 cpu clock= 5.00E-02
+ tran: time= 3.0000E-08 tot_iter=     482 conv_iter=     174 cpu clock= 5.00E-02
  sweep: tran tran1    end,  cpu clock=  5.00E-02 memory=    334 kb
  parameter: load            =    1.00E-14
  dcop: begin dcop,  cpu clock=  5.00E-02
@@ -44,15 +44,15 @@
  output: NAND_X1.mt0
  sweep: tran tran2    begin, stop_t=  3.00E-08 #sweeps=**** cpu clock=  5.00E-02
  tran: time= 3.0624E-09 tot_iter=      16 conv_iter=       8 cpu clock= 5.00E-02
- tran: time= 6.0000E-09 tot_iter=      91 conv_iter=      34 cpu clock= 5.00E-02
- tran: time= 9.2632E-09 tot_iter=     145 conv_iter=      55 cpu clock= 5.00E-02
- tran: time= 1.2000E-08 tot_iter=     189 conv_iter=      73 cpu clock= 6.00E-02
- tran: time= 1.5654E-08 tot_iter=     250 conv_iter=      94 cpu clock= 6.00E-02
- tran: time= 1.8112E-08 tot_iter=     301 conv_iter=     113 cpu clock= 6.00E-02
- tran: time= 2.1107E-08 tot_iter=     372 conv_iter=     138 cpu clock= 6.00E-02
- tran: time= 2.4437E-08 tot_iter=     396 conv_iter=     148 cpu clock= 7.00E-02
- tran: time= 2.7268E-08 tot_iter=     468 conv_iter=     173 cpu clock= 7.00E-02
- tran: time= 3.0000E-08 tot_iter=     476 conv_iter=     176 cpu clock= 7.00E-02
+ tran: time= 6.0000E-09 tot_iter=      94 conv_iter=      35 cpu clock= 5.00E-02
+ tran: time= 1.0023E-08 tot_iter=     136 conv_iter=      52 cpu clock= 6.00E-02
+ tran: time= 1.2000E-08 tot_iter=     175 conv_iter=      67 cpu clock= 6.00E-02
+ tran: time= 1.5113E-08 tot_iter=     232 conv_iter=      87 cpu clock= 6.00E-02
+ tran: time= 1.8013E-08 tot_iter=     257 conv_iter=      96 cpu clock= 6.00E-02
+ tran: time= 2.2330E-08 tot_iter=     370 conv_iter=     136 cpu clock= 7.00E-02
+ tran: time= 2.4519E-08 tot_iter=     391 conv_iter=     145 cpu clock= 7.00E-02
+ tran: time= 2.7196E-08 tot_iter=     470 conv_iter=     172 cpu clock= 7.00E-02
+ tran: time= 3.0000E-08 tot_iter=     478 conv_iter=     175 cpu clock= 7.00E-02
  sweep: tran tran2    end,  cpu clock=  7.00E-02 memory=    334 kb
  sweep: parameter       parameter       1 end
 >info:         ***** hspice job concluded

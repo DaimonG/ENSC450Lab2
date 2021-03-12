@@ -212,22 +212,22 @@ library (STDX1X4Lib) {
 			cell_fall(Propagation_Delay) {
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.429,0.720","0.592,0.946");
+                                values ("0.337,0.507","0.465,0.703");
                         }
                 	cell_rise(Propagation_Delay) {
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.419,0.655","0.615,0.934");
+                                values ("0.456,0.685","0.675,0.971");
                         }
                 	fall_transition(Out_Transition) {
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.230,0.574","0.324,0.635");
+                                values ("0.158,0.320","0.242,0.411");
                         }
                 	rise_transition(Out_Transition) { 
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.247,0.509","0.377,0.597");
+                                values ("0.255,0.526","0.375,0.615");
                         }
 		} /* End Timing Related to Pin A */
 		timing () {
@@ -235,22 +235,22 @@ library (STDX1X4Lib) {
 			cell_fall(Propagation_Delay) {
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.429,0.720","0.592,0.946");
+                                values ("0.337,0.507","0.465,0.703");
                         }
                 	cell_rise(Propagation_Delay) {
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.419,0.655","0.615,0.934");
+                                values ("0.456,0.685","0.675,0.971");
                         }
                 	fall_transition(Out_Transition) {
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.230,0.574","0.324,0.635");
+                                values ("0.158,0.320","0.242,0.411");
                         }
                 	rise_transition(Out_Transition) {
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.247,0.509","0.377,0.597");
+                                values ("0.255,0.526","0.375,0.615");
                         }
 		} /* End Timing Related to Pin B */
 		
@@ -301,22 +301,22 @@ library (STDX1X4Lib) {
 			cell_fall(Propagation_Delay) {
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.358,0.531","0.542,0.797");
+                                values ("0.415,0.576","0.631,0.853");
                         }
                 	cell_rise(Propagation_Delay) {
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.547,1.04","0.711,1.23");
+                                values ("0.433,0.681","0.566,0.874");
                         }
                 	fall_transition(Out_Transition) {
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.194,0.334","0.292,0.452");
+                                values ("0.201,0.362","0.305,0.460");
                         }
                 	rise_transition(Out_Transition) { 
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.336,0.978","0.426,1.0");
+                                values ("0.225,0.520","0.313,0.581");
                         }
 		} /* End Timing Related to Pin A */
 		timing () {
@@ -324,22 +324,22 @@ library (STDX1X4Lib) {
 			cell_fall(Propagation_Delay) {
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.358,0.531","0.542,0.797");
+                                values ("0.415,0.576","0.631,0.853");
                         }
                 	cell_rise(Propagation_Delay) {
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.547,1.04","0.711,1.23");
+                                values ("0.433,0.681","0.566,0.874");
                         }
                 	fall_transition(Out_Transition) {
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.194,0.334","0.292,0.452");
+                                values ("0.201,0.362","0.305,0.460");
                         }
                 	rise_transition(Out_Transition) { 
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.336,0.978","0.426,1.0");
+                                values ("0.225,0.520","0.313,0.581");
 			}
 		} /* End Timing Related to Pin B */
 		
@@ -388,22 +388,22 @@ to enable Timing Analyses */
                         cell_fall(Propagation_Delay) {
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.577,0.878","0.821,1.16");
+                                values ("0.613,0.911","0.873,1.20");
                         }
                         cell_rise(Propagation_Delay) {
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.611,0.982","0.809,0.121");
+                                values ("0.478,0.690","0.639,0.910");
                         }
                         fall_transition(Out_Transition) {
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.0702,0.120","0.0856,0.118");
+                                values ("0.0726,0.120","0.0850,0.123");
                         }
                         rise_transition(Out_Transition) { 
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.101,0.165","0.115,0.164");
+                                values ("0.0823,0.114","0.0942,0.124");
                         }
                 } /* End Timing Related to Pin A */
 
@@ -412,22 +412,22 @@ to enable Timing Analyses */
                         cell_fall(Propagation_Delay) {
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.577,0.878","0.821,1.16");
+                                values ("0.613,0.911","0.873,1.20");
                         }
                         cell_rise(Propagation_Delay) {
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.611,0.982","0.809,0.121");
+                                values ("0.478,0.690","0.639,0.910");
                         }
                         fall_transition(Out_Transition) {
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.0702,0.120","0.0856,0.118");
+                                values ("0.0726,0.120","0.0850,0.123");
                         }
                         rise_transition(Out_Transition) {
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.101,0.165","0.115,0.164");
+                                values ("0.0823,0.114","0.0942,0.124");
                         }
                 } /* End Timing Related to Pin B */
                 
@@ -540,22 +540,22 @@ X4
                         cell_fall(Propagation_Delay) {
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.358,0.454","0.504,0.640");
+                                values ("0.302,0.359","0.422,0.514");
                         }
                         cell_rise(Propagation_Delay) {
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.334,0.417","0.491,0.618");
+                                values ("0.377,0.452","0.562,0.674");
                         }
                         fall_transition(Out_Transition) {
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.156,0.241","0.236,0.330");
+                                values ("0.112,0.163","0.188,0.244");
                         }
                         rise_transition(Out_Transition) { 
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.186,0.238","0.285,0.357");
+                                values ("0.193,0.244","0.291,0.360");
                         }
                 } /* End Timing Related to Pin A */
                 timing () {
@@ -563,22 +563,22 @@ X4
                         cell_fall(Propagation_Delay) {
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.358,0.454","0.504,0.640");
+                                values ("0.302,0.359","0.422,0.514");
                         }
                         cell_rise(Propagation_Delay) {
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.334,0.417","0.491,0.618");
+                                values ("0.377,0.452","0.562,0.674");
                         }
                         fall_transition(Out_Transition) {
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.156,0.241","0.236,0.330");
+                                values ("0.112,0.163","0.188,0.244");
                         }
                         rise_transition(Out_Transition) {
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.186,0.238","0.285,0.357");
+                                values ("0.193,0.244","0.291,0.360");
                         }
                 } /* End Timing Related to Pin B */
                 
@@ -623,22 +623,22 @@ X4
                         cell_fall(Propagation_Delay) {
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.321,0.391","0.485,0.592");
+                                values ("0.390,0.447","0.600,0.683");
                         }
                         cell_rise(Propagation_Delay) {
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.411,0.541","0.543,0.714");
+                                values ("0.350,0.420","0.456,0.556");
                         }
                         fall_transition(Out_Transition) {
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.149,0.188","0.228,0.294");
+                                values ("0.164,0.201","0.244,0.303");
                         }
                         rise_transition(Out_Transition) { 
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.191,0.332","0.275,0.418");
+                                values ("0.148,0.213","0.228,0.302");
                         }
                 } /* End Timing Related to Pin A */
                 timing () {
@@ -646,22 +646,22 @@ X4
                         cell_fall(Propagation_Delay) {
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.321,0.391","0.485,0.592");
+                                values ("0.390,0.447","0.600,0.683");
                         }
                         cell_rise(Propagation_Delay) {
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.411,0.541","0.543,0.714");
+                                values ("0.350,0.420","0.456,0.556");
                         }
                         fall_transition(Out_Transition) {
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.149,0.188","0.228,0.294");
+                                values ("0.164,0.201","0.244,0.303");
                         }
                         rise_transition(Out_Transition) { 
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.191,0.332","0.275,0.418");
+                                values ("0.148,0.213","0.228,0.302");
                         }
                 } /* End Timing Related to Pin B */
                 
@@ -707,22 +707,22 @@ X4
                         cell_fall(Propagation_Delay) {
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.484,0.574","0.699,0.821");
+                                values ("0.525,0.610","0.757,0.872");
                         }
                         cell_rise(Propagation_Delay) {
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.520,0.633","0.707,0.847");
+                                values ("0.425,0.495","0.583,0.678");
                         }
                         fall_transition(Out_Transition) {
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.0569,0.0616","0.0688,0.0758");
+                                values ("0.0588,0.0641","0.0689,0.0751");
                         }
                         rise_transition(Out_Transition) { 
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.0735,0.0917","0.0852,0.0100");
+                                values ("0.0650,0.0708","0.0760,0.0793");
                         }
                 } /* End Timing Related to Pin A */
                 timing () {
@@ -730,22 +730,22 @@ X4
                         cell_fall(Propagation_Delay) {
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.484,0.574","0.699,0.821");
+                                values ("0.525,0.610","0.757,0.872");
                         }
                         cell_rise(Propagation_Delay) {
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.520,0.633","0.707,0.847");
+                                values ("0.425,0.495","0.583,0.678");
                         }
                         fall_transition(Out_Transition) {
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.0569,0.0616","0.0688,0.0758");
+                                values ("0.0588,0.0641","0.0689,0.0751");
                         }
                         rise_transition(Out_Transition) {
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.0735,0.0917","0.0852,0.0100");
+                                values ("0.0650,0.0708","0.0760,0.0793");
                         }
                 } /* End Timing Related to Pin B */
         } /* End of Pin Z */

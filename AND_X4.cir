@@ -25,8 +25,8 @@ Vgnds gnds 0 dc 0
 .param ds=4
 Xpmosa vdd a z vdds pt_st w=ds*2*Wn
 Xpmosb vdd b z vdds pt_st w=ds*2*Wn
-Xnmosa c a z gnds nt_st w=ds*Wn
-Xnmosb gnd b c gnds nt_st w=ds*Wn
+Xnmosa c a z gnds nt_st w=ds*2*Wn
+Xnmosb gnd b c gnds nt_st w=ds*2*Wn
 
 Xpmosz vdd z f vdds pt_st w=ds*2*Wn
 Xnmosz gnd z f gnds nt_st w=ds*Wn

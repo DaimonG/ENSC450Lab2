@@ -1,0 +1,48 @@
+* HSPICE Deck 
+
+* Transistor models 
+.protect
+.LIB `/CMC/setups/ensc450/HSPICE/cmosp18/log018.l' TT  $ typical process corner.
+.unprotect
+
+* Supply Sources
+.param pwr=1.2 
+.temp  25
+Vvdd  vdd!  0 dc pwr
+Vgnd  gnd!  0 dc 0
+
+************************************************************
+
+MNMOS Z A GND! GND!  NCH  L=180E-9 W=500E-9 AD=+2.40000000E-13 AS=+2.40000000E-13 
++PD=+1.96000000E-06 PS=+1.96000000E-06 NRD=+5.40000000E-01 NRS=+5.40000000E-01 
++M=1.0 
+
+MPMOS Z A VDD! VDD!  PCH  L=180E-9 W=500E-9 AD=+2.40000000E-13 AS=+2.40000000E-13 
++PD=+1.96000000E-06 PS=+1.96000000E-06 NRD=+5.40000000E-01 NRS=+5.40000000E-01 
++M=1.0  
+
+
+***********************************************************
+
+Cload z 0 20f
+
+* Input Stimuli 
+VA  a  0 PWL(0n 0 9n 0 10n pwr 19n pwr 20n 0)
+
+
+.tran 0.01ps 40ns START=0 
+
+.option post
+
+.meas tran avg_pwr avg power
+.meas tran tpdrise  trig v(a) val='pwr*0.5' fall=1
++                   targ v(z) val='pwr*0.5' rise=1 
+.meas tran tpdfall  trig v(a) val='pwr*0.5' rise=1
++                   targ v(z) val='pwr*0.5' fall=1 
+.meas tran Totrrise trig v(z) val='pwr*0.1' rise=1
++                   targ v(z) val='pwr*0.9' rise=1
+.meas tran Totrfall trig v(z) val='pwr*0.9' fall=1
++                   targ v(z) val='pwr*0.1' fall=1
+************************************************
+
+.end

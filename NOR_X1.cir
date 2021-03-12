@@ -22,8 +22,8 @@ Vgnds gnds 0 dc 0
 .param Wn=Wm#
 .param load=2fF
 .param ds=1
-Xpmosa vdd a c vdds pt_st w=ds*2*Wn
-Xpmosb c b z vdds pt_st w=ds*2*Wn
+Xpmosa vdd a c vdds pt_st w=ds*4*Wn
+Xpmosb c b z vdds pt_st w=ds*4*Wn
 Xnmosa gnd a z gnds nt_st w=ds*Wn
 Xnmosb gnd b z gnds nt_st w=ds*Wn
 
