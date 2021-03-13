@@ -853,8 +853,8 @@ X4
         }
 
 	drive_strength      : 1;
-  	area                : 8;
-
+  	area                : 20.34
+        cell_leakage_power      : 196;
   	/* Input pins: No timing, but need to specify input capacitance to enable Timing Analyses */
 	pin (A) {
                 direction               : input;
@@ -942,7 +942,8 @@ X4
         }
 
 	drive_strength      : 1;
-  	area                : 10;
+  	area                : 33.48;
+        cell_leakage_power      : 378;
 
   	/* Input pins: No timing, but need to specify input capacitance to enable Timing Analyses */
 	pin (A) {
@@ -1030,9 +1031,9 @@ cell (AND_X1_LAY) {
         }
 
         drive_strength      : 1;
-        area                : 11;
+        area                : 34.72;
         
-        cell_leakage_power      : 1.64;
+        cell_leakage_power      : 242;
         /* Input pins: No timing, but need to specify input capacitance
 to enable Timing Analyses */
         pin (A) {
