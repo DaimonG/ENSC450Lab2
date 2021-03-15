@@ -103,8 +103,8 @@ library (LayoutCells) {
 
         drive_strength          : 1;
         area                    : 3;
-
-	cell_leakage_power      : 1.64;
+        
+	cell_leakage_power      : 186;
 	/* Note: We are not doing this for the sake of simplicity, but it is possible to specify a different leakage for each combination of the inputs 
                  with the following syntax:   
 	         leakage_power () {
@@ -147,22 +147,22 @@ library (LayoutCells) {
 	        	cell_fall(Propagation_Delay) {
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.302,0.499","0.444,0.742");
+                                values ("0.242,0.368","0.348,0.526");
                         }
                 	cell_rise(Propagation_Delay) {
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.352,0.609","0.507,0.876");
+                                values ("0.269,0.426","0.383,0.637");
                         }
                 	fall_transition(Out_Transition) {
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.176,0.311","0.278,0.446");
+                                values ("0.150,0.233","0.250,0.391");
                         }
                 	rise_transition(Out_Transition) {
                                 index_1 ("1,  2");
                                 index_2 ("2, 10");
-                                values ("0.225,0.458","0.340,0.571");
+                                values ("0.190,0.282","0.308,0.423");
                         } 
 	      
 		} /* End Timing */		

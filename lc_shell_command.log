@@ -1,6 +1,6 @@
 #@ # 
 #@ # Running lc_shell Version O-2018.06-SP5 for linux64 -- Jan 16, 2019
-#@ # Date:   Thu Mar 11 20:02:35 2021
+#@ # Date:   Sun Mar 14 15:09:56 2021
 #@ # Run by: escmc29@ensc-esil-18
 #@ 
 
@@ -2488,8 +2488,8 @@ source /CMC/tools/synopsys/lc_vO-2018.06-SP5/admin/setup//.synopsys_lc.setup
 #@ set_check_library_options
 #@ # -- End source /CMC/tools/synopsys/lc_vO-2018.06-SP5/admin/setup//.synopsys_lc.setup
 
-source -echo -verbose /tmp/4786_1615521754192010/nglc_shell_command.tcl
-#@ # -- Starting source /tmp/4786_1615521754192010/nglc_shell_command.tcl
+source -echo -verbose /tmp/12276_1615759794950362/nglc_shell_command.tcl
+#@ # -- Starting source /tmp/12276_1615759794950362/nglc_shell_command.tcl
 
 #@ catch { set ::physopt_ignore_lpin_fanout [list [binary format H* 66616c7365]] }
 #@ catch { set ::vhdllib_insert_timing [list [binary format H* 66616c7365]] }
@@ -3126,7 +3126,7 @@ source -echo -verbose /tmp/4786_1615521754192010/nglc_shell_command.tcl
 #@ catch { set ::rc_output_threshold_pct_fall [list [binary format H* 35302e303030303030]] }
 #@ catch { set ::bin_path [list [binary format H* 2f434d432f746f6f6c732f73796e6f707379732f73796e5f764f2d323031382e30362d5350352f6c696e757836342f73796e2f62696e]] }
 #@ catch { set ::hdlin_mux_rp_limit [list [binary format H* 3132387834]] }
-#@ catch { set ::nglc_log_path [list [binary format H* 343738365f31363135353231373534313932303130]] }
+#@ catch { set ::nglc_log_path [list [binary format H* 31323237365f31363135373539373934393530333632]] }
 #@ catch { set ::timing_report_attributes [list [binary format H* 646f6e745f746f75636820646f6e745f757365206d61705f6f6e6c792073697a655f6f6e6c7920696465616c5f6e657420696e6665617369626c655f7061746873]] }
 #@ catch { set ::atpg_bidirect_output_only [list [binary format H* 66616c7365]] }
 #@ catch { set ::compile_negative_logic_methodology [list [binary format H* 66616c7365]] }
@@ -3180,7 +3180,7 @@ source -echo -verbose /tmp/4786_1615521754192010/nglc_shell_command.tcl
 #@ catch { set ::case_analysis_log_file "" }
 #@ catch { set ::link_force_case [list [binary format H* 636865636b5f7265666572656e6365]] }
 #@ ##@@@## gen_common_shell_read_lib
-#@ eval {read_lib stdX1+X4.lib}
+#@ eval {read_lib stdX1X4L3.lib}
 #@ ##@@@##
 #@ set lc_write_view_db_file false
 #@ set librs [get_libs]
